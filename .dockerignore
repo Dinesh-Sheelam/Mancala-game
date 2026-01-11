@@ -1,0 +1,52 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+**/dist
+build
+**/build
+
+# Development files
+.git
+.gitignore
+.cursor
+.cursorignore
+*.log
+*.md
+!README.md
+docs/
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Environment files (we'll copy .env explicitly in Dockerfile)
+.env
+.env.local
+.env.*.local
+
+# Test files
+**/__tests__
+**/*.test.ts
+**/*.test.js
+**/*.spec.ts
+**/*.spec.js
+
+# Coverage
+coverage
+.nyc_output
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# OpenSpec (not needed in Docker)
+openspec/
+
+# Debug logs
+.cursor/debug.log
