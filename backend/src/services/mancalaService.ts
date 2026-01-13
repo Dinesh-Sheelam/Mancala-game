@@ -33,6 +33,10 @@ export function makeMove(state: MancalaState, pitIndex: number): MoveResult {
   const { board, currentPlayer } = state;
   const newBoard = [...board];
 
+  console.log('=== MANCALA SERVICE: makeMove called ===', {
+    state,
+    pitIndex,
+  });
   // Validate move
   if (!isValidMove(state, pitIndex)) {
     throw new Error('Invalid move');
